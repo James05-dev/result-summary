@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 
 body {
-  background-color: gray;
-  font-size: 18 px;
+  background-color:white;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,4 +183,38 @@ button {
 }
 #summary {
   margin: 0px;
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 20px;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+  }
+  .left {
+    width: 100vh;
+  }
+
+  #result {
+    font-size: 1.5rem;
+  }
+  #summary {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablet devices */
+}
+@media (min-width: 1025px) {
+  /* Styles for desktop devices */
 }
